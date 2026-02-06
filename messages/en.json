@@ -488,5 +488,10 @@
     },
     "backButton": "Back to Home",
     "publishedOn": "Published on {date}"
+  },
+  "NotFoundPage": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "backToHome": "Back to Home"
   }
 }

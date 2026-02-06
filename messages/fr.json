@@ -488,5 +488,10 @@
     },
     "backButton": "Retour à l'accueil",
     "publishedOn": "Publié le {date}"
+  },
+  "NotFoundPage": {
+    "title": "Page non trouvée",
+    "description": "Désolé, la page que vous recherchez n'existe pas.",
+    "backToHome": "Retour à l'accueil"
   }
 }
