@@ -222,9 +222,9 @@ export default function Home() {
             </div>
             <div className="mt-8 flex justify-center gap-4 animate-in fade-in slide-in-from-top-20 duration-700 delay-400">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Link href="#about">
+                <a href="#about">
                   {t('hero.discoverButton')} <ChevronDown className="ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

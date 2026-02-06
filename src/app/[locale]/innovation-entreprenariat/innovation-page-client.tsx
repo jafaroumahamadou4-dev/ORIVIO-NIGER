@@ -55,9 +55,9 @@ export default function InnovationPageClient() {
             </p>
             <div className="mt-8 animate-in fade-in slide-in-from-top-20 duration-700 delay-400">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Link href="#why-join">
+                <a href="#why-join">
                   {t('hero.ctaButton')} <ArrowRight className="ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

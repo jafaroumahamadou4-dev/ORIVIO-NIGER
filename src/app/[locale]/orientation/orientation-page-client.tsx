@@ -82,9 +82,9 @@ export default function OrientationPageClient() {
             </p>
             <div className="mt-8 animate-in fade-in slide-in-from-top-20 duration-700 delay-400">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Link href="#our-approach">
+                <a href="#our-approach">
                   {t('hero.ctaButton')} <ArrowRight className="ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
