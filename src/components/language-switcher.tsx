@@ -1,6 +1,6 @@
 'use client';
 
-import { usePathname, useRouter, locales } from '@/navigation';
+import { usePathname, useRouter } from '@/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import {
   Select,
@@ -21,7 +21,7 @@ export function LanguageSwitcher() {
 
   const handleChange = (newLocale: string) => {
     startTransition(() => {
-      router.replace(pathname, { locale: newLocale });
+      router.replace(pathname as any, { locale: newLocale });
     });
   };
 

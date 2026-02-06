@@ -569,7 +569,7 @@ export default function Home() {
                               href={{
                                 pathname: '/news/[id]',
                                 params: { id: article.id },
-                              }}
+                              } as any}
                               className="text-accent font-bold group-hover/news:underline flex items-center">
                               {tNews('readMore')} <ArrowRight className="ml-1 h-4 w-4" />
                             </Link>
