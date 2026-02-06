@@ -1,0 +1,159 @@
+/**
+ * @file firestore.rules
+ * @description Firestore Security Rules for the ORIVIO Hub application.
+ *
+ * @version 1.0
+ *
+ * @section Core Philosophy
+ * This ruleset establishes a content-centric security model. Data is categorized
+ * into two main types:
+ * 1. Public Content: Data like 'opportunities' and 'partnerships' is publicly
+ *    readable by all users, but only if it has been 'approved'. Writes to this data
+ *    are restricted.
+ * 2. Private Submissions: Data like 'user_subscriptions' and 'contact_messages'
+ *    acts as a secure "drop-box." Any user can write (create) data, but no user
+ *    can read, update, or delete any data from these collections, ensuring privacy.
+ *
+ * @section Data Structure
+ * The data model is flat, consisting of four independent, top-level collections:
+ * - /opportunities/{opportunityId}
+ * - /user_subscriptions/{userSubscriptionId}
+ * - /partnerships/{partnershipId}
+ * - /contact_messages/{contactMessageId}
+ * This flat structure prevents complex hierarchical lookups and simplifies security logic.
+ *
+ * @section Key Security Decisions
+ * - Approved Read, Admin Write: 'opportunities' and 'partnerships' are world-readable
+ *   only if their status is 'approved'. Direct client writes are disabled,
+ *   defaulting to a secure "admin-only" posture for updates/deletes.
+ * - Write-Only Collections: 'user_subscriptions' and 'contact_messages' are configured
+ *   to only allow document creation. This protects sensitive user information (like emails)
+ *   from being listed or read by any client.
+ * - Default Deny: All operations are implicitly denied unless explicitly allowed by a rule.
+ * - Flexible Schema: In this prototyping phase, rules focus strictly on authorization
+ *   (who can access what) and do not enforce specific data field types or shapes,
+ *   allowing for rapid frontend development.
+ */
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    /**
+     * @description Controls access to the public collection of opportunities.
+     * @path /opportunities/{opportunityId}
+     * @allow (read) - Any user can read (get, list) opportunities, but only if they are approved.
+     *                This rule forces queries to include `where('status', '==', 'approved')`.
+     * @allow (create) - Any user can create an opportunity, but it must be in 'pending' status.
+     * @deny (update, delete) - Update and delete operations are denied for all clients.
+     * @principle Public read for approved content, secure submission for new content.
+     */
+    match /opportunities/{opportunityId} {
+      // Allow public read access only to 'approved' opportunities.
+      // This enforces that all client queries must filter for status == 'approved'.
+      allow read: if resource.data.status == 'approved';
+
+      // Allow anyone to submit an opportunity, but it must be in 'pending' status.
+      // This prevents users from self-approving content.
+      allow create: if request.resource.data.status == 'pending';
+      
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Manages user subscriptions, acting as a secure "drop-box".
+     * @path /user_subscriptions/{userSubscriptionId}
+     * @allow (create) - Any user, signed in or not, can create a subscription document.
+     * @deny (get, list, update, delete) - No user can read, list, or modify subscriptions to protect PII.
+     * @principle Enforces a write-only pattern for collecting sensitive user data securely.
+     */
+    match /user_subscriptions/{userSubscriptionId} {
+      allow get: if false;
+      allow list: if false;
+      allow create: if true;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Controls access to the public collection of partnerships.
+     * @path /partnerships/{partnershipId}
+     * @allow (get, list) - Any user, signed in or not, can read partnership information.
+     * @deny (create, update, delete) - All write operations are denied for all users.
+     * @principle Public read for informational content, with writes reserved for a trusted process (e.g., admin SDK).
+     */
+    match /partnerships/{partnershipId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Manages contact messages, acting as a secure "drop-box".
+     * @path /contact_messages/{contactMessageId}
+     * @allow (create) - Any user, signed in or not, can send a message.
+     * @deny (get, list, update, delete) - No user can read, list, or modify messages to protect privacy.
+     * @principle Enforces a write-only pattern for collecting user messages securely.
+     */
+    match /contact_messages/{contactMessageId} {
+      allow get: if false;
+      allow list: if false;
+      allow create: if true;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Controls access to the public impact statistics.
+     * @path /impact_stats/{statId}
+     * @allow (read) - Any user can read the impact statistics for the homepage.
+     * @deny (write) - All write operations are denied for clients.
+     * @principle Public read for informational content.
+     */
+    match /impact_stats/{statId} {
+      allow read: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Controls access to user testimonials.
+     * @path /testimonials/{testimonialId}
+     * @allow (read) - Any user can read approved testimonials.
+     * @deny (write) - All write operations are denied for clients.
+     * @principle Public read for approved content, writes reserved for admin.
+     */
+    match /testimonials/{testimonialId} {
+      allow read: if resource.data.status == 'approved';
+      allow write: if false;
+    }
+
+    /**
+     * @description Controls access to administrator profiles.
+     * @path /administrators/{administratorId}
+     * @allow (read) - Any user can read administrator profiles for the homepage.
+     * @deny (write) - All write operations are denied for clients.
+     * @principle Public read for informational content.
+     */
+    match /administrators/{administratorId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    /**
+     * @description Controls access to news articles.
+     * @path /news_articles/{articleId}
+     * @allow (read) - Any user can read news articles.
+     * @deny (write) - All write operations are denied for clients.
+     * @principle Public read for informational content.
+     */
+    match /news_articles/{articleId} {
+        allow read: if true;
+        allow write: if false;
+    }
+  }
+}
+    

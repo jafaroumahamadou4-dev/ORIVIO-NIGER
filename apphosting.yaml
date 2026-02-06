@@ -1,0 +1,10 @@
+# The version of the App Hosting configuration schema to use
+version: 1
+
+# The command that builds your app
+build:
+  run: npm run build
+
+# The command that starts your app
+run:
+  command: npm run start

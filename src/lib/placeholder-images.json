@@ -1,0 +1,256 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Young professionals collaborating in a modern office in West Africa.",
+      "imageUrl": "https://images.unsplash.com/photo-1758520145178-29eafeda9908?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWxzJTIwb2ZmaWNlfGVufDB8fHx8MTc2OTgyNTQxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professionals office"
+    },
+    {
+      "id": "testimonial1",
+      "description": "Headshot of a smiling young African woman.",
+      "imageUrl": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzY5ODExNjc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "testimonial2",
+      "description": "Headshot of a smiling young African man.",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2OTc5MTc0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man smiling"
+    },
+    {
+      "id": "partner1",
+      "description": "Logo for a tech company.",
+      "imageUrl": "https://images.unsplash.com/photo-1762330918172-e19bcb6a7172?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWNoJTIwbG9nb3xlbnwwfHx8fDE3Njk3NzgyNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tech logo"
+    },
+    {
+      "id": "partner2",
+      "description": "Logo for a financial institution.",
+      "imageUrl": "https://images.unsplash.com/photo-1706086699531-c0591a87c73a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMGxvZ298ZW58MHx8fHwxNzY5ODI1NDEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance logo"
+    },
+    {
+      "id": "partner3",
+      "description": "Logo for an educational foundation.",
+      "imageUrl": "https://images.unsplash.com/photo-1762330918617-e135c98d40fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxlZHVjYXRpb24lMjBsb2dvfGVufDB8fHx8MTc2OTc4ODkxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "education logo"
+    },
+    {
+      "id": "partner4",
+      "description": "Logo for a non-profit organization.",
+      "imageUrl": "https://images.unsplash.com/photo-1758790636662-2f8eec12077e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxub25wcm9maXQlMjBsb2dvfGVufDB8fHx8MTc2OTgyNTQxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nonprofit logo"
+    },
+    {
+      "id": "partner5",
+      "description": "Logo for a government agency.",
+      "imageUrl": "https://images.unsplash.com/photo-1676969048242-0669dcb69762?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z292ZXJubWVudCUyMGxvZ298ZW58MHx8fHwxNzY5NzgxNjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "government logo"
+    },
+    {
+      "id": "partner6",
+      "description": "Logo for an agricultural tech company.",
+      "imageUrl": "https://picsum.photos/seed/9/200/100",
+      "imageHint": "agritech logo"
+    },
+    {
+      "id": "job1",
+      "description": "Modern office space of a tech company.",
+      "imageUrl": "https://images.unsplash.com/photo-1718220216044-006f43e3a9b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0ZWNoJTIwb2ZmaWNlfGVufDB8fHx8MTc2OTgyNTQxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tech office"
+    },
+    {
+      "id": "job2",
+      "description": "Marketing team in a creative meeting.",
+      "imageUrl": "https://images.unsplash.com/photo-1681993632820-256b2d70e98c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXJrZXRpbmclMjBtZWV0aW5nfGVufDB8fHx8MTc2OTc4NjQ0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marketing meeting"
+    },
+    {
+      "id": "scholarship1",
+      "description": "University campus library.",
+      "imageUrl": "https://images.unsplash.com/photo-1501503069356-3c6b82a17d89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwbGlicmFyeXxlbnwwfHx8fDE3Njk4MjU0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university library"
+    },
+    {
+      "id": "scholarship2",
+      "description": "Students in a science lab.",
+      "imageUrl": "https://images.unsplash.com/photo-1707944746058-4da338d0f827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2NpZW5jZSUyMGxhYnxlbnwwfHx8fDE3Njk3NTA3MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science lab"
+    },
+    {
+      "id": "entrepreneurship1",
+      "description": "Small business owner working in a workshop.",
+      "imageUrl": "https://images.unsplash.com/photo-1545262722-9e0d80a0bc01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c21hbGwlMjBidXNpbmVzc3xlbnwwfHx8fDE3Njk4MjU0MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "small business"
+    },
+    {
+      "id": "mentorship1",
+      "description": "A graphic illustrating the concept of mentorship.",
+      "imageUrl": "https://www.teachizy.fr/wp-content/uploads/2025/03/mentorat-1536x864.png",
+      "imageHint": "mentorship concept"
+    },
+    {
+      "id": "contact",
+      "description": "A friendly customer support person with a headset.",
+      "imageUrl": "https://images.unsplash.com/photo-1553775282-20af80779df7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXN0b21lciUyMHN1cHBvcnR8ZW58MHx8fHwxNzY5ODE2OTAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "customer support"
+    },
+    {
+      "id": "partnerships",
+      "description": "A diverse group of business people shaking hands.",
+      "imageUrl": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxidXNpbmVzcyUyMGhhbmRzaGFrZXxlbnwwfHx8fDE3Njk3NzI2NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business handshake"
+    },
+    {
+      "id": "admin1",
+      "description": "Headshot of MAHAMADOU GAYA JAFAROU",
+      "imageUrl": "https://zupimages.net/up/26/06/z05r.jpeg",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "admin2",
+      "description": "Headshot of ALASSANE ADAMOU YASSIR",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcxMDIyMjYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "admin3",
+      "description": "Headshot of MAMANE BACHIR MOUTARI HAKIM",
+      "imageUrl": "https://images.unsplash.com/photo-1583067615544-7c73a8a93910?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhZnJpY2FuJTIwbWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcxMDIyMzI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "admin4",
+      "description": "Headshot of SIDI MOHAMED IKNANE MANOU",
+      "imageUrl": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcxMDIyMjYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "admin-placeholder",
+      "description": "Placeholder for a vacant position.",
+      "imageUrl": "https://images.unsplash.com/photo-1613364294434-f8a19a18114f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbm9ueW1vdXMlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEyNjgzNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "placeholder profile"
+    },
+    {
+      "id": "admin6",
+      "description": "Headshot of INOUSSA SAOUNA NAFISSA",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEyNjg0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "admin7",
+      "description": "Headshot of NOUHOU NAGODI ABDOUL RACHIDOU",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcxMDIyMjYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "admin8",
+      "description": "Headshot of ALI BARA LAWALI",
+      "imageUrl": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcxMDIyMjYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "admin9",
+      "description": "Headshot of SAHIROU MAHAZOU SARATOU",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmZW1hbGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEyNjg0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "admin10",
+      "description": "Headshot of BARHAMOU SOUMANA ABDOUL KARIM",
+      "imageUrl": "https://images.unsplash.com/photo-1520409364224-63400afe26e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8bWFsZSUyMHBvcnRyYWl0fGVufDB8fHx8fDE3NzEwMjIyNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "admin11",
+      "description": "Headshot of KOKOYÉ ASSOGBA CÉCILE",
+      "imageUrl": "https://images.unsplash.com/photo-1554151228-14d9def656e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmZW1hbGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEyNjg0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "news1",
+      "description": "A conference hall with people listening to a speaker.",
+      "imageUrl": "https://images.unsplash.com/photo-1571645163064-77faa9676a46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb25mZXJlbmNlJTIwZXZlbnR8ZW58MHx8fHwxNzY5OTM0NzM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "conference event"
+    },
+    {
+      "id": "news2",
+      "description": "A group of young entrepreneurs in a workshop.",
+      "imageUrl": "https://images.unsplash.com/photo-1753164725054-763fe44e3be8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlbnRyZXByZW5ldXIlMjB3b3Jrc2hvcHxlbnwwfHx8fDE3NzAwMTM1Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "entrepreneur workshop"
+    },
+    {
+      "id": "news3",
+      "description": "A student receiving a certificate on stage.",
+      "imageUrl": "https://images.unsplash.com/photo-1656761961810-9e0f885dff6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhd2FyZCUyMGNlcmVtb255fGVufDB8fHx8MTc3MDAwOTY3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "award ceremony"
+    },
+    {
+      "id": "news4",
+      "description": "People networking at a professional event.",
+      "imageUrl": "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bmV0d29ya2luZyUyMGV2ZW50fGVufDB8fHx8fDE3NzAwMTM1Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "networking event"
+    },
+    {
+      "id": "opportunities-hero",
+      "description": "A collage of diverse people representing opportunities",
+      "imageUrl": "https://zupimages.net/up/26/06/zjel.jpg",
+      "imageHint": "people collage"
+    },
+    {
+      "id": "orientation-hero",
+      "description": "A young student thoughtfully looking out a window, contemplating their future.",
+      "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50JTIwbG9va2luZyUyMG91dCUyMHdpbmRvd3xlbnwwfHx8fDE3NzAyNjg5Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student future"
+    },
+    {
+      "id": "orientation-digital",
+      "description": "A clean, modern graphic representing a digital interface with charts and graphs.",
+      "imageUrl": "https://images.unsplash.com/photo-1545231159-36d9938c3b0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkaWdpdGFsJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc3MDAxODE5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital interface"
+    },
+    {
+      "id": "orientation-human",
+      "description": "A mentor having a supportive conversation with a younger person in a cafe.",
+      "imageUrl": "https://images.unsplash.com/photo-1510947565940-a38e2443c426?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWxzJTIwZGlzY3Vzc2lvbnxlbnwwfHx8fDE3Njk4MjU0MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mentor conversation"
+    },
+    {
+      "id": "orientation-testimonial",
+      "description": "Portrait of a confident university graduate.",
+      "imageUrl": "https://images.unsplash.com/photo-1523050854058-8dfe9fb116c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1bml2ZXJzaXR5JTIwZ3JhZHVhdGV8ZW58MHx8fHwxNzcwMjY4OTI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university graduate"
+    },
+    {
+      "id": "network-hero",
+      "description": "A diverse group of professionals networking at a modern event.",
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxuZXR3b3JraW5nJTIwZXZlbnR8ZW58MHx8fHwxNzcwMjk5OTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "networking event"
+    },
+    {
+      "id": "network-testimonial",
+      "description": "Portrait of a confident startup founder.",
+      "imageUrl": "https://images.unsplash.com/photo-1556742212-5b321f3c261b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdGFydHVwJTIwZm91bmRlcnxlbnwwfHx8fDE3NzAyOTk5OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "startup founder"
+    },
+    {
+      "id": "innovation-hero",
+      "description": "A group of young innovators working on a project with laptops and whiteboards.",
+      "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbm5vdmF0aW9uJTIwd29ya3Nob3B8ZW58MHx8fHwxNzcwMzAwMDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "innovation workshop"
+    },
+    {
+      "id": "training1",
+      "description": "Person following an online course on a laptop.",
+      "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvbmxpbmUlMjB0cmFpbmluZ3xlbnwwfHx8fDE3NzEzNzMxNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online training"
+    },
+    {
+      "id": "webinar1",
+      "description": "Speaker at a webinar conference.",
+      "imageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWJpbmFyfGVufDB8fHx8fDE3NzEzNzMxNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "webinar conference"
+    }
+  ]
+}

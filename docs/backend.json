@@ -1,0 +1,499 @@
+{
+  "entities": {
+    "Opportunity": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Opportunity",
+      "type": "object",
+      "description": "Represents an opportunity such as a job, scholarship, entrepreneurship program, or mentorship.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the opportunity."
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of the opportunity."
+        },
+        "description": {
+          "type": "string",
+          "description": "A detailed description of the opportunity."
+        },
+        "category": {
+          "type": "string",
+          "description": "The type of opportunity (e.g., 'Job', 'Scholarship', 'Mentorship', 'Entrepreneurship')."
+        },
+        "location": {
+          "type": "string",
+          "description": "The location where the opportunity is available."
+        },
+        "closingDate": {
+          "type": "string",
+          "description": "The deadline for application.",
+          "format": "date-time"
+        },
+        "company": {
+          "type": "string",
+          "description": "The organization offering the opportunity."
+        },
+        "applyLink": {
+          "type": "string",
+          "description": "URL to the opportunity details page.",
+          "format": "uri"
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "URL of the opportunity image.",
+          "format": "uri"
+        },
+        "requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of requirements for the opportunity."
+        },
+        "submitterEmail": {
+          "type": "string",
+          "format": "email",
+          "description": "Email of the person who submitted the opportunity."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of when the opportunity was created."
+        },
+        "status": {
+          "type": "string",
+          "description": "The approval status of the opportunity.",
+          "enum": [
+            "pending",
+            "approved",
+            "rejected"
+          ]
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "category",
+        "company",
+        "applyLink",
+        "closingDate",
+        "imageUrl"
+      ]
+    },
+    "UserSubscription": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "UserSubscription",
+      "type": "object",
+      "description": "Represents a user's subscription to receive email updates.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the user subscription."
+        },
+        "email": {
+          "type": "string",
+          "description": "The user's email address.",
+          "format": "email"
+        },
+        "firstName": {
+          "type": "string",
+          "description": "The user's first name."
+        },
+        "lastName": {
+          "type": "string",
+          "description": "The user's last name."
+        },
+        "subscribedAt": {
+          "type": "string",
+          "description": "Timestamp of when the user subscribed.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "email",
+        "subscribedAt"
+      ]
+    },
+    "Partnership": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Partnership",
+      "type": "object",
+      "description": "Represents a partnership with another organization.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the partnership."
+        },
+        "partnerName": {
+          "type": "string",
+          "description": "The name of the partner organization."
+        },
+        "description": {
+          "type": "string",
+          "description": "A description of the partnership."
+        },
+        "logoUrl": {
+          "type": "string",
+          "description": "URL to the partner's logo.",
+          "format": "uri"
+        },
+        "websiteUrl": {
+          "type": "string",
+          "description": "URL to the partner's website.",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "id",
+        "partnerName",
+        "description",
+        "logoUrl",
+        "websiteUrl"
+      ]
+    },
+    "ContactMessage": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "ContactMessage",
+      "type": "object",
+      "description": "Represents a message sent by a user through the contact form.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the contact message."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the user sending the message."
+        },
+        "email": {
+          "type": "string",
+          "description": "The email address of the user sending the message.",
+          "format": "email"
+        },
+        "subject": {
+          "type": "string",
+          "description": "The subject of the message."
+        },
+        "message": {
+          "type": "string",
+          "description": "The content of the message."
+        },
+        "sentAt": {
+          "type": "string",
+          "description": "Timestamp of when the message was sent.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "name",
+        "email",
+        "subject",
+        "message",
+        "sentAt"
+      ]
+    },
+    "ImpactStats": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Impact Statistics",
+      "type": "object",
+      "description": "Stores key performance indicators for the platform's impact, such as the number of youth reached, partners, and success rate.",
+      "properties": {
+        "youthReached": {
+          "type": "number",
+          "description": "The total number of youth reached by the platform."
+        },
+        "partners": {
+          "type": "number",
+          "description": "The total number of strategic partners."
+        },
+        "successRate": {
+          "type": "number",
+          "description": "The success rate of users finding opportunities, as a percentage."
+        }
+      },
+      "required": [
+        "youthReached",
+        "partners",
+        "successRate"
+      ]
+    },
+    "Testimonial": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Testimonial",
+      "type": "object",
+      "description": "Represents a user testimonial for display on specific pages.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the person giving the testimonial."
+        },
+        "role": {
+          "type": "string",
+          "description": "Role or position of the person (e.g., 'University Student')."
+        },
+        "testimony": {
+          "type": "string",
+          "description": "The content of the testimonial."
+        },
+        "imageUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the person's avatar image."
+        },
+        "language": {
+          "type": "string",
+          "description": "The language of the testimonial.",
+          "enum": [
+            "en",
+            "fr"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "description": "The approval status of the testimonial.",
+          "enum": [
+            "pending",
+            "approved",
+            "rejected"
+          ]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of when the testimonial was created."
+        },
+        "page": {
+          "type": "string",
+          "description": "The page where the testimonial should be displayed (e.g., 'home', 'orientation').",
+          "enum": [
+            "home",
+            "orientation"
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "role",
+        "testimony",
+        "imageUrl",
+        "language",
+        "status"
+      ]
+    },
+    "Administrator": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Administrator",
+      "type": "object",
+      "description": "Represents a member of the ORIVIO Hub administration team.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Full name of the administrator."
+        },
+        "role": {
+          "type": "string",
+          "description": "The administrator's role or title within the organization."
+        },
+        "imageUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the administrator's profile picture."
+        },
+        "displayOrder": {
+          "type": "number",
+          "description": "A number to control the display order in the list. Lower numbers appear first."
+        }
+      },
+      "required": [
+        "name",
+        "role",
+        "imageUrl",
+        "displayOrder"
+      ]
+    },
+    "NewsArticle": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "News Article",
+      "type": "object",
+      "description": "Represents a news article or blog post for the site.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the article."
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of the article."
+        },
+        "summary": {
+          "type": "string",
+          "description": "A short summary of the article."
+        },
+        "content": {
+          "type": "string",
+          "description": "The full content of the article, in markdown or plain text."
+        },
+        "imageUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the article's primary image."
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The publication date of the article."
+        }
+      },
+      "required": [
+        "title",
+        "summary",
+        "content",
+        "imageUrl",
+        "date"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/opportunities/{opportunityId}",
+        "definition": {
+          "entityName": "Opportunity",
+          "schema": {
+            "$ref": "#/backend/entities/Opportunity"
+          },
+          "description": "Stores opportunity data (jobs, scholarships, etc.).",
+          "params": [
+            {
+              "name": "opportunityId",
+              "description": "Unique identifier for the opportunity."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/user_subscriptions/{userSubscriptionId}",
+        "definition": {
+          "entityName": "UserSubscription",
+          "schema": {
+            "$ref": "#/backend/entities/UserSubscription"
+          },
+          "description": "Stores user subscription data.",
+          "params": [
+            {
+              "name": "userSubscriptionId",
+              "description": "Unique identifier for the user subscription."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/partnerships/{partnershipId}",
+        "definition": {
+          "entityName": "Partnership",
+          "schema": {
+            "$ref": "#/backend/entities/Partnership"
+          },
+          "description": "Stores partnership data.",
+          "params": [
+            {
+              "name": "partnershipId",
+              "description": "Unique identifier for the partnership."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/contact_messages/{contactMessageId}",
+        "definition": {
+          "entityName": "ContactMessage",
+          "schema": {
+            "$ref": "#/backend/entities/ContactMessage"
+          },
+          "description": "Stores contact messages.",
+          "params": [
+            {
+              "name": "contactMessageId",
+              "description": "Unique identifier for the contact message."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/impact_stats/{statId}",
+        "definition": {
+          "entityName": "ImpactStats",
+          "schema": {
+            "$ref": "#/backend/entities/ImpactStats"
+          },
+          "description": "Stores key impact statistics for the homepage. This collection should ideally contain only a single document with a well-known ID like 'main'.",
+          "params": [
+            {
+              "name": "statId",
+              "description": "The unique identifier for the statistics document."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/testimonials/{testimonialId}",
+        "definition": {
+          "entityName": "Testimonial",
+          "schema": {
+            "$ref": "#/backend/entities/Testimonial"
+          },
+          "description": "Stores user testimonials for the homepage. They should be filtered by language and 'approved' status.",
+          "params": [
+            {
+              "name": "testimonialId",
+              "description": "The unique identifier for the testimonial."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/administrators/{administratorId}",
+        "definition": {
+          "entityName": "Administrator",
+          "schema": {
+            "$ref": "#/backend/entities/Administrator"
+          },
+          "description": "Stores information about the platform administrators for display on the homepage. Sorted by 'displayOrder'.",
+          "params": [
+            {
+              "name": "administratorId",
+              "description": "The unique identifier for the administrator."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/news_articles/{articleId}",
+        "definition": {
+          "entityName": "NewsArticle",
+          "schema": {
+            "$ref": "#/backend/entities/NewsArticle"
+          },
+          "description": "Stores news articles for display on the homepage and news section. Sorted by date.",
+          "params": [
+            {
+              "name": "articleId",
+              "description": "The unique identifier for the news article."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "The Firestore data structure is designed to support the ORIVIO Hub application, focusing on opportunities, user subscriptions, partnerships, and contact messages. Authorization Independence is achieved by avoiding hierarchical `get()` calls in security rules. Since there are no relational or ownership-based requirements specified, simple collections are used.\n\nOpportunities are stored in a top-level `opportunities` collection. User subscriptions are stored in a top-level `user_subscriptions` collection. Partnerships are stored in a top-level `partnerships` collection. Contact messages are stored in a top-level `contact_messages` collection.\n\nThis structure supports secure `list` operations (QAPs) by ensuring each collection has a homogeneous security posture. Each collection is treated independently, simplifying the security rules and enabling straightforward queries."
+  }
+}
+
+    

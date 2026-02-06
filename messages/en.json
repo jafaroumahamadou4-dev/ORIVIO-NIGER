@@ -1,0 +1,492 @@
+
+{
+  "Header": {
+    "home": "Home",
+    "opportunities": "Opportunities",
+    "orientation": "Orientation",
+    "network": "Network",
+    "innovationAndEntrepreneurship": "Innovation & Entrepreneurship",
+    "contact": "Contact",
+    "findOpportunities": "Find Opportunities",
+    "language": "Language"
+  },
+  "Footer": {
+    "tagline": "Your gateway to the future",
+    "keywords": "Orientation | Network | Integration | Vocation | Innovation | Opportunities",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "copyright": "© {year} ORIVIO Hub. All Rights Reserved."
+  },
+  "HomePage": {
+    "metadata": {
+      "title": "ORIVIO Hub",
+      "description": "Empowering West African youth with opportunities for growth and success."
+    },
+    "hero": {
+      "title": "<span class='text-6xl md:text-8xl font-bold text-accent'>ORIVIO</span><br /><span class='text-base md:text-lg tracking-widest'>Orientation | Network | Integration | Vocation | Innovation | Opportunities</span>",
+      "tagline": "“Your gateway to the future”",
+      "exploreButton": "Explore Opportunities",
+      "partnerButton": "Become a Partner",
+      "discoverButton": "Discover"
+    },
+    "about": {
+      "title": "Who are we?",
+      "description": "ORIVIO is a Nigerian digital platform dedicated to guidance, mentoring, academic and professional integration, entrepreneurship, and innovation, serving high school students, graduates, university students, professionals, and the Nigerian diaspora.",
+      "visionTitle": "Our Vision",
+      "visionDescription": "To build a Niger where every young person, regardless of their region or social condition, can choose their path with full knowledge, access the right opportunities, and flourish in a dignified and sustainable academic and professional journey.",
+      "missionTitle": "Our Mission",
+      "missionItem1": "Offer personalized dual-focus guidance: academic and professional.",
+      "missionItem2": "Connect young people to a network of qualified mentors, including those from the diaspora.",
+      "missionItem3": "Facilitate professional integration through concrete opportunities (internships, jobs, competitions, scholarships).",
+      "missionItem4": "Promote entrepreneurship, innovation, and continuous learning.",
+      "missionItem5": "Create a supportive community of youth, professionals, institutions, and partners committed to the future of Niger."
+    },
+    "services": {
+      "title": "Our Core Services",
+      "subtitle": "We provide a comprehensive ecosystem of support to help you thrive.",
+      "employmentTitle": "Employment",
+      "employmentDescription": "Connect with leading companies and discover job openings tailored for you.",
+      "scholarshipsTitle": "Scholarships",
+      "scholarshipsDescription": "Access funding opportunities to support your educational aspirations.",
+      "entrepreneurshipTitle": "Entrepreneurship",
+      "entrepreneurshipDescription": "Find resources and support to launch and grow your business venture.",
+      "internshipTitle": "Internships",
+      "internshipDescription": "Find internship opportunities to gain valuable professional experience.",
+      "orientationTitle": "Guidance",
+      "orientationDescription": "Receive personalized guidance to navigate your career and educational path.",
+      "networkingTitle": "Networking",
+      "networkingDescription": "Connect with peers and professionals in your field.",
+      "formationsTitle": "Trainings",
+      "othersTitle": "Others"
+    },
+    "featuredOpportunities": {
+      "title": "Featured Opportunities",
+      "subtitle": "Hand-picked opportunities to kickstart your career and growth.",
+      "viewAllButton": "View All Opportunities"
+    },
+    "impact": {
+      "title": "Our Impact in Numbers",
+      "subtitle": "We are proud of the tangible results and the community we've built.",
+      "youthReached": "Youth Reached",
+      "youthReachedValue": "10000",
+      "youthReachedSuffix": "+",
+      "partners": "Strategic Partners",
+      "partnersValue": "50",
+      "partnersSuffix": "+",
+      "successRate": "Success Rate",
+      "successRateValue": "75",
+      "successRateSuffix": "%",
+      "youthReachedDescription": "We have successfully connected thousands of young individuals to life-changing opportunities.",
+      "partnersDescription": "Our network of partners is committed to fostering youth development in Niger.",
+      "successRateDescription": "A high percentage of our users secure positions or funding through our platform."
+    },
+    "testimonials": {
+      "title": "What Our Users Say"
+    },
+    "team": {
+      "title": "Our Administrators"
+    },
+    "partners": {
+      "title": "Our Esteemed Partners",
+      "becomePartnerButton": "Become a Partner",
+      "ourPartners": {
+        "visitWebsite": "Visit Website"
+      }
+    },
+    "subscription": {
+      "title": "Stay Ahead of the Curve",
+      "subtitle": "Subscribe to our newsletter and get the latest opportunities delivered directly to your inbox.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "news": {
+      "title": "Latest News",
+      "readMore": "Read More"
+    }
+  },
+  "OpportunitiesPage": {
+    "metadata": {
+      "title": "Opportunities"
+    },
+    "headerTitle": "Find Your Next <span class='text-accent'>Opportunity</span>",
+    "headerSubtitle": "Browse through a curated list of jobs, scholarships, and more, designed to help you grow.",
+    "searchPlaceholder": "Search by title or company...",
+    "all": "All",
+    "noOpportunities": "No opportunities found.",
+    "noOpportunitiesSuggestion": "Try adjusting your search or check back later.",
+    "submitOpportunity": {
+      "title": "Have an Opportunity to Share?",
+      "subtitle": "Help us grow our network by submitting jobs, scholarships, or other opportunities for West African youth.",
+      "button": "Submit an Opportunity"
+    }
+  },
+  "SubmitOpportunityPage": {
+    "metadata": {
+      "title": "Submit an Opportunity"
+    },
+    "headerTitle": "Submit an Opportunity",
+    "headerSubtitle": "Thank you for contributing to our platform. Please fill out the form below. Our team will review your submission before publishing.",
+    "backButton": "Back to Opportunities",
+    "form": {
+      "titleLabel": "Opportunity Title",
+      "companyLabel": "Company/Organization Name",
+      "categoryLabel": "Category",
+      "locationLabel": "Location (e.g., City, Country)",
+      "closingDateLabel": "Application Closing Date",
+      "applyLinkLabel": "Application Link",
+      "imageLabel": "Opportunity Image",
+      "descriptionLabel": "Description",
+      "requirementsLabel": "Requirements (one per line)",
+      "requirementsPlaceholder": "List each requirement on a new line.",
+      "submitterEmailLabel": "Your Email Address (for confirmation)",
+      "submitButton": "Submit for Review",
+      "submittingButton": "Submitting...",
+      "successTitle": "Submission Received!",
+      "errorTitle": "Submission Error"
+    },
+    "categories": {
+      "Employment": "Employment",
+      "Internship": "Internship",
+      "Scholarships": "Scholarships",
+      "Entrepreneurship": "Entrepreneurship",
+      "Formations": "Trainings",
+      "Autres": "Others"
+    }
+  },
+  "OpportunityDetailsPage": {
+    "backButton": "Back to Opportunities",
+    "description": "Description",
+    "requirements": "Requirements",
+    "applyNow": "Apply Now",
+    "applyButton": "Apply on Company Site",
+    "applicationCloses": "Applications close on {date}.",
+    "share": "Share this opportunity",
+    "shareButton": "Share",
+    "shareText": "Check out this opportunity on ORIVIO Hub: \"{title}\" at {company}. See details here:",
+    "shareMessages": {
+      "discover": "Discover this opportunity on \"ORIVIO NIGER\": {category}",
+      "details": "Check details and apply via the link below:",
+      "verbs": {
+        "Employment": "is hiring for the position of",
+        "Internship": "is offering an internship as a",
+        "Scholarships": "is offering a scholarship for",
+        "Entrepreneurship": "is launching a program for",
+        "Formations": "is offering a training in",
+        "Autres": "is offering a"
+      }
+    },
+    "shareSuccess": "Link copied!",
+    "shareSuccessDescription": "The share message has been copied to your clipboard.",
+    "shareError": "Sharing Error",
+    "shareErrorDescription": "Sharing is not supported on this browser."
+  },
+  "PartnershipsPage": {
+    "metadata": {
+      "title": "Partnerships",
+      "description": "Collaborate with ORIVIO Hub to empower West African youth. Join our network of leading organizations."
+    },
+    "hero": {
+      "title": "Partner with <span class='text-accent'>Purpose</span>",
+      "subtitle": "Join us in our mission to create a brighter future for the youth of West Africa. Together, we can make a greater impact."
+    },
+    "whyPartner": {
+      "title": "Why Partner with ORIVIO Hub?",
+      "subtitle": "Collaboration is at the heart of our success. By partnering with us, you can:",
+      "accessTalent": "Access Talent",
+      "accessTalentDescription": "Connect with a diverse pool of ambitious and skilled young professionals.",
+      "enhanceBrand": "Enhance Your Brand",
+      "enhanceBrandDescription": "Showcase your commitment to corporate social responsibility and youth development.",
+      "driveImpact": "Drive Impact",
+      "driveImpactDescription": "Play a direct role in shaping the future workforce and leaders of West Africa."
+    },
+    "ourPartners": {
+      "title": "Our Esteemed Partners",
+      "subtitle": "We are honored to work with a diverse range of organizations dedicated to our shared vision.",
+      "visitWebsite": "Visit Website"
+    },
+    "cta": {
+      "title": "Become a Partner Today",
+      "subtitle": "Ready to make a difference? We'd love to explore how we can work together. Reach out to our partnerships team to get started.",
+      "contactButton": "Contact Us"
+    }
+  },
+  "ContactPage": {
+    "metadata": {
+      "title": "Contact Us",
+      "description": "Get in touch with the ORIVIO Hub team. We are here to help with any questions or support requests."
+    },
+    "getInTouch": {
+      "title": "Get in Touch",
+      "subtitle": "Have a question, feedback, or a partnership inquiry? We'd love to hear from you."
+    },
+    "emailUs": {
+      "title": "Email Us",
+      "description": "Send your questions to our support team."
+    },
+    "callUs": {
+      "title": "Call Us",
+      "description": "We are available from 9am-5pm GMT."
+    },
+    "ourOffice": {
+      "title": "Our Office",
+      "address": "Bobiel, Niamey, Niger"
+    },
+    "sendMessage": {
+      "title": "Send us a message"
+    }
+  },
+  "OrientationPage": {
+    "metadata": {
+      "title": "Orientation",
+      "description": "Find your path with our expert academic and professional guidance."
+    },
+    "hero": {
+      "title": "Chart Your <span class='text-accent'>Future</span>",
+      "subtitle": "Personalized academic and professional guidance to align your aspirations with market realities.",
+      "ctaButton": "Get Started"
+    },
+    "approach": {
+      "title": "Our Approach",
+      "subtitle": "We combine the best of technology and human connection to provide you with holistic guidance.",
+      "digital": {
+        "title": "Digital Platform",
+        "description": "Access a suite of powerful tools, assessments, and resources anytime, anywhere to explore career paths and educational opportunities."
+      },
+      "human": {
+        "title": "Human Mentorship",
+        "description": "Connect with experienced mentors and guidance counselors for personalized advice, support, and real-world insights."
+      }
+    },
+    "mentorship": {
+      "title": "Unlock Your Potential with <span class='text-accent'>Personalized Mentorship</span>",
+      "description": "Our program connects you with a network of qualified mentors, including professionals from the diaspora, ready to share their real-world experience and guide you on your academic and professional journey.",
+      "feature1": {
+        "title": "Expert Guidance",
+        "description": "Receive one-on-one advice tailored to your specific goals and challenges."
+      },
+      "feature2": {
+        "title": "Network Expansion",
+        "description": "Build valuable connections with industry leaders and peers in your field of interest."
+      },
+      "feature3": {
+        "title": "Confidence Boost",
+        "description": "Gain the assurance and insights needed to navigate your future with clarity."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "steps": [
+        {
+          "title": "Self-Discovery",
+          "description": "Take our comprehensive assessments to understand your strengths, interests, and personality."
+        },
+        {
+          "title": "Explore Paths",
+          "description": "Use our platform to research careers, universities, and programs that match your profile."
+        },
+        {
+          "title": "Get Guidance",
+          "description": "Schedule sessions with our mentors and counselors to discuss your options and create a plan."
+        },
+        {
+          "title": "Take Action",
+          "description": "Receive support with applications, interviews, and the first steps of your chosen path."
+        }
+      ]
+    },
+    "features": {
+      "title": "Key Features",
+      "items": [
+        {
+          "title": "Career Path Explorer",
+          "description": "Discover detailed information about various professions and industries."
+        },
+        {
+          "title": "Mentor Matching",
+          "description": "Find and connect with mentors from our extensive professional network."
+        },
+        {
+          "title": "Resource Library",
+          "description": "Access articles, videos, and guides on career development and education."
+        },
+        {
+          "title": "Skills Assessment",
+          "description": "Identify your key skills and areas for development to become market-ready."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Find Your Path?",
+      "subtitle": "Your journey to a fulfilling career starts here. Let us guide you every step of the way.",
+      "button": "Start Your Journey"
+    }
+  },
+  "NetworkPage": {
+    "metadata": {
+      "title": "Network",
+      "description": "Connect with peers, mentors, and professionals in the ORIVIO Hub network."
+    },
+    "hero": {
+      "title": "Build Your Professional <span class='text-accent'>Network</span>",
+      "subtitle": "Connect with mentors, peers, and industry leaders to accelerate your career growth.",
+      "ctaButton": "Join the Network"
+    },
+    "whyJoin": {
+      "title": "Why Join Our Network?",
+      "subtitle": "Unlock a world of connections, knowledge, and opportunities.",
+      "mentors": {
+        "title": "Connect with Mentors",
+        "description": "Get guidance and support from experienced professionals who are invested in your success."
+      },
+      "opportunities": {
+        "title": "Discover Opportunities",
+        "description": "Be the first to know about exclusive jobs, internships, and projects shared within the network."
+      },
+      "community": {
+        "title": "Engage with a Community",
+        "description": "Collaborate, share ideas, and grow with a diverse community of ambitious young talents from across Niger."
+      }
+    },
+    "features": {
+      "title": "Powerful Networking Tools",
+      "items": [
+        {
+          "title": "Member Directory",
+          "description": "Easily search and find professionals, mentors, and peers by industry, skills, or location."
+        },
+        {
+          "title": "Smart Connections",
+          "description": "Receive intelligent recommendations for people you should connect with based on your profile."
+        },
+        {
+          "title": "Discussion Forums",
+          "description": "Join conversations, ask questions, and share your expertise on a wide range of topics."
+        },
+        {
+          "title": "Exclusive Events",
+          "description": "Participate in online and offline networking events, webinars, and workshops."
+        }
+      ]
+    },
+    "testimonial": {
+      "text": "Your network often determines the scope of your opportunities, because networking transforms individual talent into a true collective force.",
+      "name": "Mahamadou Gaya Jafarou",
+      "role": "Co-founder & CEO ORIVIO"
+    },
+    "cta": {
+      "title": "Ready to Expand Your Horizons?",
+      "subtitle": "Join a vibrant community of innovators, leaders, and change-makers.",
+      "button": "Start Connecting Now"
+    }
+  },
+  "InnovationAndEntrepreneurshipPage": {
+    "metadata": {
+      "title": "Innovation & Entrepreneurship",
+      "description": "Fuel your entrepreneurial spirit with our resources and support for innovation."
+    },
+    "hero": {
+      "title": "Build the <span class='text-accent'>Future</span>",
+      "subtitle": "From idea to impact, we provide the tools, mentorship, and funding to fuel your entrepreneurial journey.",
+      "ctaButton": "Discover Programs"
+    },
+    "whyJoin": {
+      "title": "Our Pillars of Action",
+      "subtitle": "We are building an ecosystem based on collaboration, investment, and innovation to generate sustainable impact.",
+      "items": [
+        {
+          "title": "Connection & Collaboration",
+          "description": "We forge powerful collaborations between diaspora expertise and local talent for cross-border projects."
+        },
+        {
+          "title": "Access to Funding",
+          "description": "We connect promising startups with investors, venture capitalists, and diaspora investment funds."
+        },
+        {
+          "title": "Job Creation",
+          "description": "By supporting innovation, we directly contribute to the creation of skilled and sustainable jobs for youth."
+        },
+        {
+          "title": "Technological Innovation",
+          "description": "We encourage projects that leverage technology to solve local challenges and drive sustainable growth."
+        }
+      ]
+    },
+    "programs": {
+      "title": "Our Flagship Programs",
+      "subtitle": "Structured support to take your venture to the next level.",
+      "items": [
+        {
+          "title": "Startup Incubator",
+          "description": "An intensive program providing seed funding, workspace, and structured training to turn ideas into viable businesses."
+        },
+        {
+          "title": "Global Mentorship Network",
+          "description": "Get paired with a mentor from the diaspora or a local industry leader to guide your entrepreneurial journey."
+        },
+        {
+          "title": "Annual Pitch Competition",
+          "description": "Showcase your startup to a panel of investors and experts for a chance to win significant funding and recognition."
+        },
+        {
+          "title": "Diaspora Investment Fund",
+          "description": "A dedicated fund that co-invests in startups that demonstrate high potential for impact and scalability in Niger."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Innovate?",
+      "subtitle": "Whether you are a local entrepreneur or a member of the diaspora, let's build the future of Niger together.",
+      "button": "Join the Movement"
+    }
+  },
+  "OpportunityCard": {
+    "closes": "Closes: {date}",
+    "viewDetails": "View Details"
+  },
+  "OpportunitySummary": {
+    "description": "Get a quick overview of this opportunity with an AI-generated summary.",
+    "generateButton": "Generate AI Summary",
+    "generatingButton": "Generating...",
+    "errorTitle": "Error",
+    "errorMessage": "Failed to generate summary.",
+    "summaryTitle": "Summary"
+  },
+  "ContactForm": {
+    "nameLabel": "Full Name",
+    "emailLabel": "Email Address",
+    "messageLabel": "Message",
+    "button": "Send Message",
+    "successTitle": "Message Sent!",
+    "errorTitle": "Error"
+  },
+  "SubscriptionForm": {
+    "successTitle": "Success!",
+    "errorTitle": "Error"
+  },
+  "Actions": {
+    "subscription": {
+      "invalidEmail": "Please enter a valid email address.",
+      "success": "Thank you for subscribing!"
+    },
+    "contact": {
+      "nameTooShort": "Name must be at least 2 characters.",
+      "invalidEmail": "Please enter a valid email address.",
+      "messageTooShort": "Message must be at least 10 characters.",
+      "success": "Thank you for your message. We'll get back to you soon!"
+    },
+    "summary": {
+      "error": "Could not generate summary at this time."
+    },
+    "submitOpportunity": {
+      "invalid": "Please fill out all required fields correctly.",
+      "success": "Your opportunity has been submitted for review. Thank you!"
+    }
+  },
+  "NewsDetailsPage": {
+    "metadata": {
+      "title": "News Details"
+    },
+    "backButton": "Back to Home",
+    "publishedOn": "Published on {date}"
+  }
+}
