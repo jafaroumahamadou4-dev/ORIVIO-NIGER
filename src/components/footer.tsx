@@ -45,7 +45,7 @@ export function Footer() {
               {navItems.map((item) => (
                 <li key={item.label}>
                   <Link
-                    href={item.href}
+                    href={item.href as any}
                     className="text-primary-foreground/70 hover:text-white transition-colors"
                   >
                     {item.label}
