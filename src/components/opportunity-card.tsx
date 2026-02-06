@@ -98,7 +98,7 @@ export function OpportunityCard({ opportunity }: OpportunityCardProps) {
       </CardContent>
       <CardFooter>
         <Button asChild variant="link" className="p-0 text-accent font-bold group-hover:underline flex items-center">
-            <Link href={`/opportunities/${opportunity.id}`}>
+            <Link href={{pathname: '/opportunities/[id]', params: {id: opportunity.id}} as any}>
                 {t('viewDetails')}
                 <Eye className="ml-2 h-4 w-4" />
             </Link>

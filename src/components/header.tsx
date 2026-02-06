@@ -37,7 +37,7 @@ export function Header() {
             {navItems.map((item) => (
               <Link
                 key={item.href}
-                href={item.href}
+                href={item.href as any}
                 className={cn(
                   'transition-colors hover:text-accent',
                   pathname === item.href ? 'text-primary font-bold' : 'text-foreground/60'
@@ -72,7 +72,7 @@ export function Header() {
                   {navItems.map((item) => (
                     <Link
                       key={item.label}
-                      href={item.href}
+                      href={item.href as any}
                       onClick={() => setMobileMenuOpen(false)}
                       className={cn(
                         'flex items-center gap-3 rounded-l-md p-3 text-lg font-medium transition-colors hover:bg-accent hover:text-accent-foreground',
