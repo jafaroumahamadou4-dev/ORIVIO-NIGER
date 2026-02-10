@@ -2,7 +2,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import InnovationPageClient from './innovation-page-client';
 
 export async function generateMetadata({ params }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale: params.locale, namespace: 'InnovationAndEntrepreneurshipPage.metadata' });
+  setRequestLocale(params.locale);
+  const t = await getTranslations('InnovationAndEntrepreneurshipPage.metadata');
   return {
     title: t('title'),
     description: t('description'),
