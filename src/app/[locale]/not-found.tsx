@@ -1,15 +1,12 @@
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 
-// The `not-found` component receives the `locale` param just like layouts and pages.
-export default async function NotFoundPage({ params: { locale } }: { params: { locale: string } }) {
-  // 1. Set the locale for static rendering
-  unstable_setRequestLocale(locale);
-
-  // 2. Get translations for the current locale
-  const t = await getTranslations('NotFoundPage');
+// The `not-found` component is not rendered with a locale parameter.
+// We can use the 'next-intl' hooks as usual.
+export default function NotFoundPage() {
+  const t = useTranslations('NotFoundPage');
 
   return (
     <div className="flex flex-col items-center justify-center text-center py-20 min-h-[calc(100vh-14rem)]">
