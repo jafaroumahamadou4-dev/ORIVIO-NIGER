@@ -1,13 +1,11 @@
 import {getRequestConfig} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-import {locales} from '@/navigation';
- 
+
+/**
+ * Configuration de next-intl compatible avec toutes les versions 3.x.
+ * Cette syntaxe utilise le paramètre locale passé par le routeur 
+ * et retourne l'objet attendu par Vercel (incluant la propriété locale).
+ */
 export default getRequestConfig(async ({locale}) => {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) {
-    notFound();
-  }
- 
   return {
     locale,
     messages: (await import(`../../messages/${locale}.json`)).default
